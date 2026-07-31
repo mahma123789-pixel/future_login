@@ -1,0 +1,148 @@
+/* ==========================================
+   Global & Reset Styles
+   ========================================== */
+:root {
+    --primary-blue: #0d6efd;
+    --navy-blue: #0a192f;
+    --light-bg: #f8f9fa;
+    --purple-ipn: #6f42c1;
+    --teal-color: #0d9488;
+}
+
+body.bg-app {
+    background-color: #f4f6f9;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+
+.fs-8 {
+    font-size: 0.75rem;
+}
+
+.arabic-sub {
+    font-size: 0.75rem;
+    color: #6c757d;
+    display: block;
+    margin-top: -2px;
+}
+
+/* ==========================================
+   Header & Navigation
+   ========================================== */
+/* Top Utility Bar */
+.top-bar {
+    font-size: 0.85rem;
+}
+
+/* Main Navbar */
+.navbar-nav .nav-link {
+    color: #495057;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-blue);
+}
+
+.nav-active .nav-link {
+    position: relative;
+}
+
+/* Page Banner */
+.banner-bg {
+    background-color: #ffffff;
+}
+
+/* ==========================================
+   Card & Section Custom Styles
+   ========================================== */
+.bg-blue-soft {
+    background-color: #eef5ff;
+}
+
+.text-teal {
+    color: var(--teal-color) !important;
+}
+
+.text-purple {
+    color: var(--purple-ipn) !important;
+}
+
+.bg-purple {
+    background-color: var(--purple-ipn) !important;
+}
+
+/* Bank & Wallet Logo Boxes */
+.bank-logo-box {
+    width: 65px;
+    height: 45px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.bank-logo-box:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-blue);
+}
+
+.bank-logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Right Sidebar Cards Custom Colors */
+.bg-blue-card {
+    background-color: #f0f7ff;
+    border-left: 4px solid var(--primary-blue) !important;
+}
+
+.bg-light-green {
+    background-color: #f0fdf4;
+    border-left: 4px solid #198754 !important;
+}
+
+.bg-light-orange {
+    background-color: #fffbf0;
+    border: 1px solid #fef08a !important;
+}
+
+/* ==========================================
+   Footer Styles
+   ========================================== */
+.bg-navy {
+    background-color: var(--navy-blue);
+}
+
+/* تنسيق صور السوشيال ميديا الحقيقية */
+.social-img-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-img-link img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.social-img-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+.space-y-1 li {
+    margin-bottom: 6px;
+}

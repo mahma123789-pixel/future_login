@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Tuition - Future University</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-app">
+
+    <!-- Top Utility Bar (تم التعديل للون الأزرق bg-primary مع نص أبيض) -->
+    <div class="top-bar py-2 px-4 text-white border-bottom bg-primary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="fs-7 text-white">
+                <span><i class="fa-solid fa-graduation-cap me-1"></i> Welcome to Future University</span>
+            </div>
+            <div class="d-flex gap-3 align-items-center fs-7 text-white">
+                <span><i class="fa-solid fa-headset me-1"></i> مساعدة</span>
+                <span><i class="fa-solid fa-globe me-1"></i> العربية | EN</span>
+                <span><i class="fa-regular fa-user me-1"></i> Student <i class="fa-solid fa-chevron-down ms-1 fs-8"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- تم تكبير اللوجو العلوي من 42 إلى 65 -->
+                <img src="orginal logo.png" alt="Future University Logo" height="65">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item text-center">
+                        <a class="nav-link fw-semibold" href="#">Home<br><span class="arabic-sub">الرئيسية</span></a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fw-semibold" href="#">Book Queue<br><span class="arabic-sub">حجز دور</span></a>
+                    </li>
+                    <li class="nav-item text-center nav-active">
+                        <a class="nav-link text-primary fw-bold" href="#">Pay Tuition<br><span class="arabic-sub text-primary">دفع المصاريف</span></a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fw-semibold" href="#">My Bookings<br><span class="arabic-sub">حجوزاتي</span></a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fw-semibold" href="#">Payments<br><span class="arabic-sub">المدفوعات</span></a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fw-semibold" href="#">Guidelines<br><span class="arabic-sub">الإرشادات</span></a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link fw-semibold" href="#">Contact Us<br><span class="arabic-sub">تواصل معنا</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <div class="banner-bg border-bottom py-4 mb-4">
+        <div class="container px-4 d-flex justify-content-between align-items-center">
+            <div>
+                <h2 class="fw-bold text-dark mb-1">Pay Tuition / <span class="text-primary fs-3">دفع المصاريف</span></h2>
+                <p class="text-muted mb-0 fs-7">Pay your tuition securely and easily</p>
+                <p class="text-muted mb-0 fs-7">أدفع مصاريفك بأمان وسهولة</p>
+                <div class="mt-3 text-muted fs-7">
+                    <i class="fa-solid fa-house text-primary me-1"></i> <span class="text-primary">Home</span> / <span class="text-secondary">Pay Tuition</span>
+                </div>
+            </div>
+            <div class="d-none d-md-block">
+                <!-- تم تكبير صورة البانر من 110 إلى 160 -->
+                <img src="payment.png" alt="Payment Banner" height="160">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Body -->
+    <div class="container px-4 mb-5">
+        <div class="row g-4">
+            
+            <!-- Left Main Column -->
+            <div class="col-lg-8">
+                
+                <!-- Student Info Card -->
+                <div class="card border-0 shadow-sm rounded-3 mb-4">
+                    <div class="card-header bg-white border-bottom-0 pt-3 px-4">
+                        <h6 class="fw-bold text-dark mb-0">Student Information / <span class="text-primary">بيانات الطالب</span></h6>
+                    </div>
+                    <div class="card-body px-4 pt-1">
+                        <div class="row py-2 border-bottom align-items-center fs-7">
+                            <div class="col-sm-5 text-secondary"><i class="fa-regular fa-id-card me-2"></i>Student ID / رقم الطالب</div>
+                            <div class="col-sm-7 fw-semibold text-dark">2021001234</div>
+                        </div>
+                        <div class="row py-2 border-bottom align-items-center fs-7">
+                            <div class="col-sm-5 text-secondary"><i class="fa-regular fa-user me-2"></i>Student Name / اسم الطالب</div>
+                            <div class="col-sm-7 fw-semibold text-dark">Ahmed Mohamed Ali</div>
+                        </div>
+                        <div class="row py-2 border-bottom align-items-center fs-7">
+                            <div class="col-sm-5 text-secondary"><i class="fa-solid fa-graduation-cap me-2"></i>Faculty / الكلية</div>
+                            <div class="col-sm-7 fw-semibold text-dark">Faculty of Computer Science</div>
+                        </div>
+                        <div class="row py-2 border-bottom align-items-center fs-7">
+                            <div class="col-sm-5 text-secondary"><i class="fa-regular fa-calendar me-2"></i>Academic Year / العام الدراسي</div>
+                            <div class="col-sm-7 fw-semibold text-dark">2023 - 2024</div>
+                        </div>
+                        <div class="row py-2 border-bottom align-items-center fs-7">
+                            <div class="col-sm-5 text-secondary"><i class="fa-solid fa-layer-group me-2"></i>Level / المستوى</div>
+                            <div class="col-sm-7 fw-semibold text-dark">4th Year</div>
+                        </div>
+                        <div class="row py-2 mt-3 align-items-center bg-blue-soft rounded-2 px-2">
+                            <div class="col-sm-6 fw-bold text-primary fs-7"><i class="fa-solid fa-wallet me-2"></i>Amount Due / المبلغ المستحق</div>
+                            <div class="col-sm-6 fw-bold fs-5 text-teal text-end">EGP 12,500.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Select Payment Method Header -->
+                <h6 class="fw-bold text-dark mb-3">Select Payment Method / <span class="text-primary">اختر طريقة الدفع</span></h6>
+
+                <!-- Option 1: Pay via Banks -->
+                <div class="card border-0 shadow-sm rounded-3 mb-3">
+                    <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:42px; height:42px;">
+                                    <i class="fa-solid fa-building-columns fs-6"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0 fs-7">1. Pay via Banks / <span class="text-primary">الدفع عن طريق البنوك</span></h6>
+                                    <p class="text-muted mb-0 fs-8">Pay securely using your bank account or debit card</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-secondary fs-7"></i>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 pt-2 border-top">
+                            <div class="bank-logo-box"><img src="NBE_logo.png" alt="NBE"></div>
+                            <div class="bank-logo-box"><img src="بنك_مصر.png" alt="Banque Misr"></div>
+                            <div class="bank-logo-box"><img src="cib.png.png" alt="CIB"></div>
+                            <div class="bank-logo-box"><img src="Logo_Qatar_National_Bank.png" alt="QNB"></div>
+                            <div class="bank-logo-box"><img src="alexbank.png.webp" alt="AlexBank"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Option 2: Pay via E-Wallets -->
+                <div class="card border-0 shadow-sm rounded-3 mb-3">
+                    <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width:42px; height:42px;">
+                                    <i class="fa-solid fa-wallet fs-6"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0 fs-7">2. Pay via E-Wallets / <span class="text-success">الدفع عن طريق المحافظ الإلكترونية</span></h6>
+                                    <p class="text-muted mb-0 fs-8">Fast and secure payment using your e-wallet</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-secondary fs-7"></i>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 pt-2 border-top">
+                            <div class="bank-logo-box"><img src="21478207.png" alt="Vodafone Cash"></div>
+                            <div class="bank-logo-box"><img src="ET_Logo.png" alt="Etisalat Cash"></div>
+                            <div class="bank-logo-box"><img src="orange.png.png" alt="Orange Money"></div>
+                            <div class="bank-logo-box"><img src="wepay.png.webp" alt="WE Pay"></div>
+                            <div class="bank-logo-box"><img src="paymob.png.png" alt="PayMob"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Option 3: Pay via InstaPay -->
+                <div class="card border-0 shadow-sm rounded-3 mb-4">
+                    <div class="card-body p-3">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="bg-purple text-white rounded-circle d-flex align-items-center justify-content-center" style="width:42px; height:42px;">
+                                <span class="fw-bold fs-8">IPN</span>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0 fs-7">3. Pay via InstaPay / <span class="text-purple">الدفع عن طريق إنستا باي</span></h6>
+                                <p class="text-muted mb-0 fs-8">Instant payment using InstaPay</p>
+                            </div>
+                        </div>
+                        <div class="row pt-3 border-top align-items-center">
+                            <div class="col-md-4 text-center border-end">
+                                <h4 class="fw-bold text-purple fst-italic mb-0">INSTA<span class="text-warning">>></span>PAY</h4>
+                            </div>
+                            <div class="col-md-4 border-end fs-8">
+                                <p class="fw-bold mb-1 text-dark">How to pay with InstaPay</p>
+                                <ol class="ps-3 mb-0 text-muted">
+                                    <li>Open your banking app</li>
+                                    <li>Select InstaPay</li>
+                                    <li>Enter University Code
+                                        <div class="badge bg-light text-primary border border-primary my-1 d-block w-75 py-1">FTUR1234</div>
+                                    </li>
+                                    <li>Confirm payment</li>
+                                </ol>
+                            </div>
+                            <!-- تم استبدال الأيقونة المكسورة بـ QR Code حقيقي متجاوب -->
+                            <div class="col-md-4 text-center">
+                                <p class="fw-bold mb-1 fs-8 text-dark">Scan to Pay</p>
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=FTUR1234" alt="QR Code" class="img-fluid rounded border p-1 my-1" style="width: 90px; height: 90px;">
+                                <p class="text-muted fs-8 mb-0">University Code<br><span class="fw-bold text-dark">FTUR1234</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Footer Grid -->
+                <div class="row text-center g-2">
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-3 shadow-sm border border-light">
+                            <i class="fa-solid fa-shield-halved text-primary fs-5 mb-2"></i>
+                            <h6 class="fw-bold fs-8 mb-0">Secure Payment</h6>
+                            <span class="text-muted fs-8">100% secure</span><br>
+                            <span class="text-muted fs-8">دفع آمن 100%</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-3 shadow-sm border border-light">
+                            <i class="fa-regular fa-clock text-primary fs-5 mb-2"></i>
+                            <h6 class="fw-bold fs-8 mb-0">Instant Confirmation</h6>
+                            <span class="text-muted fs-8">Receive receipt instantly</span><br>
+                            <span class="text-muted fs-8">تأكيد فوري</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-3 shadow-sm border border-light">
+                            <i class="fa-regular fa-file-lines text-primary fs-5 mb-2"></i>
+                            <h6 class="fw-bold fs-8 mb-0">Digital Receipt</h6>
+                            <span class="text-muted fs-8">Download your receipt</span><br>
+                            <span class="text-muted fs-8">إيصال إلكتروني</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-3 shadow-sm border border-light">
+                            <i class="fa-solid fa-lock text-primary fs-5 mb-2"></i>
+                            <h6 class="fw-bold fs-8 mb-0">Data Protection</h6>
+                            <span class="text-muted fs-8">Your data is safe</span><br>
+                            <span class="text-muted fs-8">حماية بياناتك</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Sidebar Column -->
+            <div class="col-lg-4">
+                
+                <!-- Payment Summary Card -->
+                <div class="card border-0 shadow-sm rounded-3 mb-4 bg-blue-card">
+                    <div class="card-header bg-transparent border-bottom-0 pt-3 px-4">
+                        <h6 class="fw-bold text-primary mb-0">Payment Summary / <span class="text-primary">ملخص الدفع</span></h6>
+                    </div>
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between mb-2 fs-7">
+                            <div><p class="mb-0 fw-semibold text-dark">Tuition Fees</p><small class="text-muted">المصروفات الدراسية</small></div>
+                            <span class="fw-bold text-dark">EGP 12,000.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 fs-7">
+                            <div><p class="mb-0 fw-semibold text-dark">Activity Fees</p><small class="text-muted">رسوم الأنشطة</small></div>
+                            <span class="fw-bold text-dark">EGP 300.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 pb-2 border-bottom fs-7">
+                            <div><p class="mb-0 fw-semibold text-dark">Library Fees</p><small class="text-muted">رسوم المكتبة</small></div>
+                            <span class="fw-bold text-dark">EGP 200.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-2">
+                            <div><h6 class="fw-bold text-dark mb-0 fs-7">Total Amount</h6><small class="text-muted fs-8">إجمالي المبلغ</small></div>
+                            <h5 class="fw-bold text-teal mb-0">EGP 12,500.00</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Important Notes Card -->
+                <div class="card border-0 shadow-sm rounded-3 bg-light-green mb-4">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold text-success mb-3 fs-7">Important Notes / <span class="fs-8">ملاحظات هامة</span></h6>
+                        <div class="d-flex gap-2 mb-2">
+                            <i class="fa-regular fa-circle-check text-success fs-6 mt-1"></i>
+                            <div class="fs-8">
+                                <p class="mb-0 fw-semibold text-dark">Payment will be reflected within a few minutes.</p>
+                                <span class="text-muted">سيتم تحديث عملية الدفع خلال بضع دقائق.</span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 mb-2">
+                            <i class="fa-regular fa-circle-check text-success fs-6 mt-1"></i>
+                            <div class="fs-8">
+                                <p class="mb-0 fw-semibold text-dark">Please ensure your payment details are correct.</p>
+                                <span class="text-muted">يرجى التأكد من صحة بيانات الدفع.</span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <i class="fa-regular fa-circle-check text-success fs-6 mt-1"></i>
+                            <div class="fs-8">
+                                <p class="mb-0 fw-semibold text-dark">For any assistance, contact the finance office.</p>
+                                <span class="text-muted">للمساعدة، يرجى التواصل مع إدارة الشؤون المالية.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Need Help Card -->
+                <div class="card border-0 shadow-sm rounded-3 bg-light-orange">
+                    <div class="card-body p-4 text-center">
+                        <h6 class="fw-bold text-warning mb-2 fs-7">Need Help? / <span class="fs-8">تحتاج مساعدة؟</span></h6>
+                        <div class="my-2">
+                            <i class="fa-solid fa-headset fs-1 text-primary"></i>
+                        </div>
+                        <p class="fs-7 fw-semibold text-dark mb-0">Contact our support team</p>
+                        <p class="fs-8 text-muted mb-0">we are here to help you.</p>
+                        <p class="fs-8 text-muted mb-3">تواصل مع فريق الدعم نحن هنا لمساعدتك.</p>
+                        <a href="#" class="btn btn-primary w-100 rounded-2 fw-semibold fs-7 py-2"><i class="fa-solid fa-phone me-2"></i>Contact Support</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <footer class="bg-navy text-white pt-5 pb-3">
+        <div class="container px-4">
+            <div class="row g-4 border-bottom border-secondary pb-4">
+                <div class="col-md-3">
+                    <!-- تم تكبير اللوجو السفي من 45 إلى 70 -->
+                    <img src="logo white.png" alt="Future University White Logo" height="70" class="mb-3">
+                    <p class="fs-8 text-light mb-0">Building a better future through knowledge</p>
+                    <small class="text-muted fs-8">نبني مستقبلاً أفضل بالمعرفة</small>
+                    <div class="d-flex gap-3 mt-3 align-items-center">
+    <a href="#" class="social-img-link"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook"></a>
+    <a href="#" class="social-img-link"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter"></a>
+    <a href="#" class="social-img-link"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram"></a>
+    <a href="#" class="social-img-link"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube"></a>
+    <a href="#" class="social-img-link"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+</div>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3 fs-7">Quick Links</h6>
+                    <ul class="list-unstyled fs-8 space-y-1">
+                        <li><a href="#" class="text-light text-decoration-none">Home / الرئيسية</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Book Queue / حجز دور</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Pay Tuition / دفع المصاريف</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">My Bookings / حجوزاتي</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Payments / المدفوعات</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3 fs-7">Support</h6>
+                    <ul class="list-unstyled fs-8 space-y-1">
+                        <li><a href="#" class="text-light text-decoration-none">Guidelines / الإرشادات</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ / الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact Us / تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 fs-8">
+                    <h6 class="fw-bold mb-3 fs-7">Contact Us</h6>
+                    <p class="mb-1 text-light"><i class="fa-solid fa-location-dot me-2"></i>Future University, City, Country</p>
+                    <p class="mb-1 text-light"><i class="fa-solid fa-phone me-2"></i>+20 123 456 7890</p>
+                    <p class="mb-1 text-light"><i class="fa-solid fa-envelope me-2"></i>info@futureuniversity.edu.eg</p>
+                    <p class="mb-0 text-light"><i class="fa-solid fa-clock me-2"></i>Sun - Thu : 8:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center flex-wrap fs-7 text-white-50 pt-3 border-top border-secondary">
+    <p class="mb-0">&copy; 2024 Future University. All rights reserved.</p>
+    <p class="mb-0">جميع الحقوق محفوظة &copy; 2024 جامعة المستقبل</p>
+</div>
+        </div>
+    </footer>
+
+</body>
+</html>
